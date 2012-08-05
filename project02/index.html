@@ -12,7 +12,7 @@
 		}
 		window.onload=function(){
 			console.time('copyto');
-			var st={display1:1,display2:0};
+			var st={display1:1,display2:1};
 			var lg="I love Firebug";
 			var lgc="This is error test";
 			var speed=1000;
@@ -20,8 +20,8 @@
 			document.getElementsByTagName('input')[1].checked=st.display2;
 			dd('display1',st.display1);
 			dd('display2',st.display2);
-			for(var i=0;i<speed;i++)
-				document.writeln('hello No.'+i);
+//			for(var i=0;i<speed;i++)
+//				document.writeln('hello No.'+i);
 //			console.log(lg);
 //			console.warn(lg);
 			console.timeEnd('copyto');
