@@ -4,14 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 	<title>js include</title>
-<!--<script type="text/javascript" src="js/functionjs.html"></script>-->
+<script type="text/javascript" src="js/getlanguage.html"></script>
+	<!--<script type="text/javascript" src="js/headerjs.html"></script>-->
 	<script type="text/javascript">
+		headjs(advance);
 
 		function dd(id,value){
 			document.getElementById(id).style.display=(value)?"":"none";
 		}
 		window.onload=function(){
-			console.time('copyto');
+//			console.time('copyto');
 			var st={display1:1,display2:1};
 			var lg="I love Firebug";
 			var lgc="This is error test";
@@ -24,7 +26,10 @@
 //				document.writeln('hello No.'+i);
 //			console.log(lg);
 //			console.warn(lg);
-			console.timeEnd('copyto');
+//			console.timeEnd('copyto');
+			$('#jquery').html('hi jQuery~');
+			err();
+			aa('helo');
 		}
 
 	</script>
@@ -40,7 +45,10 @@
 	<tr id="display2">
 		<td>title</td>
 		<td><input type="text" value="1232321"></td></tr>
+	<tr>
+		<td colspan="2" id="jquery"></td></tr>
 </table>
+<p><script type="text/javascript">showText(1);</script></p>
 
 <script type="text/javascript">
 //	dw('helloworld');
@@ -48,6 +56,7 @@
 //	dw(showText(1));
 //	dw('<br>');
 //	dw(showtip());
+	document.write(default_language);
 </script>
 </body>
 </html>

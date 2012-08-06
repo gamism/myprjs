@@ -1,0 +1,10 @@
+var basic=["functionjs.html","https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"];
+var advance=["js/headerjs.html","js/functionjs.html","https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"];
+var ipv6=["functionjs.html","https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js","js/ipv6js.html"];
+
+function headjs(obj){
+    for (var i in obj){
+//        head.js(obj[i]);
+        document.write('<script type="text/javascript" src="'+obj[i]+'"></script>');
+    }
+}
