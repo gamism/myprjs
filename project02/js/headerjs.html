@@ -1,21 +1,45 @@
+
+/**
+ *
+ * @type {String}
+ */
 var default_language="uk.js";
+/**
+ *
+ * @type {Object}
+ */
 var lang={0:"",
     1:"step123232",
     2:"step2"
 };
 
+/**
+ * @param str
+ */
 function dw(str){
     document.write(str);
 }
-
-function err(){
-    console.log('angry');
+/**
+ *
+ * @param log
+ */
+function err(log){
+    log = log || "nothing";
+    console.warn('==============Warning=============');
+    console.log(log);
+    console.warn('==============Warning=============');
 }
-
+/**
+ *
+ * @param str
+ */
 function aa(str){
     alert(str);
 }
-
+/**
+ *
+ * @param idx
+ */
 function showText(idx){
     dw(lang[idx]);
 }

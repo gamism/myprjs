@@ -1,49 +1,49 @@
 //isNull:
-    function(a){
+    function isNull(a){
     return a === null;
-},
+}
 //isUndefined:
-    function(a){
+    function isUndefinded(a){
     return a === undefined;
-},
+}
 //isNumber:
-    function(a){
+    function isNumber(a){
     return typeof a === 'number';
-},
+}
 //isString:
-    function(a){
+    function isString(a){
     return typeof a === 'string';
-},
+}
 //isBoolean:
-    function(a){
+    function isBoolean(a){
     return typeof a === 'boolean';
-},
+}
 //isPrimitive:
-    function(b){
+    function isPrimitive(b){
     var a = typeof b;
     return !!(b === undefined || b === null || a == 'boolean' || a == 'number' || a == 'string');
-},
+}
 //isArray:
-    function(a){
+    function isArray(a){
     return proto_obj.toString.call(a) === '[object Array]';
-},
+}
 //isFunction:
-    function(a){
+    function isFunction(a){
     return proto_obj.toString.call(a) === '[object Function]';
-},
+}
 //isPlainObject:
-    function(o){
+    function isPlainObject(o){
     if (!o || o === win || o === doc || o === doc.body) {
         return false;
     }
     return 'isPrototypeOf' in o && proto_obj.toString.call(o) === '[object Object]';
-},
+}
 //isWindow:
-    function(o){
+    function isWindow(o){
     return o && typeof o === 'object' && 'setInterval' in o;
-},
+}
 //isEmptyObject:
-    function(o){
+    function isEmptyObject(o){
     for(var a in o) {
         return false;
     }
