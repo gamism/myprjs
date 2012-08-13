@@ -7,13 +7,25 @@
 <script type="text/javascript" src="js/getlanguage.html"></script>
 	<!--<script type="text/javascript" src="js/headerjs.html"></script>-->
 	<script type="text/javascript">
-
+		var hash={300:"I don't think so."};
 
 		var a="10";
 		function dd(id,value){
 			document.getElementById(id).style.display=(value)?"":"none";
 		}
+//==========prototype Object Size============
+		Object.prototype.size2=function(){
+			var len=0;
+			for(var i in this) if(this.hasOwnProperty(i)) len++;
+			return len;
+		}
+//==========prototype Object Size============
 		window.onload=function(){
+			console.log(hash[300]);
+			console.log(hash.size2());
+			hash['250']="obj push";
+			err(hash[250]);
+			console.log(hash.size2());
 //			console.time('copyto');
 			var st={display1:1,display2:1};
 			var lg="I love Firebug";
