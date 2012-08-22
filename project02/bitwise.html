@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<title>bitwise operation</title>
+	<script type="text/javascript">
+		window.onload=function(){
+
+			var a=1;
+			var f0,f1,f2,f3;
+			var result=0;
+
+			f0=1;
+			f1=a<<1;
+			f2=a<<2;
+			f3=a<<3;
+
+			result |= f0;
+			result |= f1;
+			result |= f2;
+			result |= f3;
+
+			console.debug("result=%d",result);
+			console.debug(result.toString(2));
+
+		}
+	</script>
+</head>
+<body>
+bitwise operation
+</body>
+</html>
