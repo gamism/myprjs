@@ -21,11 +21,11 @@
 		}
 //==========prototype Object Size============
 		window.onload=function(){
-			console.log(hash[300]);
-			console.log(hash.size2());
+//			console.log(hash[300]);
+//			console.log(hash.size2());
 			hash['250']="obj push";
-			err(hash[250]);
-			console.log(hash.size2());
+//			err(hash[250]);
+//			console.log(hash.size2());
 //			console.time('copyto');
 			var st={display1:1,display2:1};
 			var lg="I love Firebug";
@@ -33,17 +33,40 @@
 			var speed=1000;
 			document.getElementsByTagName('input')[0].checked=st.display1;
 			document.getElementsByTagName('input')[1].checked=st.display2;
-			dd('display1',st.display1);
-			dd('display2',st.display2);
+//			dd('display1',st.display1);
+//			dd('display2',st.display2);
 //			for(var i=0;i<speed;i++)
 //				document.writeln('hello No.'+i);
 //			console.log(lg);
 //			console.warn(lg);
 //			console.timeEnd('copyto');
 			$('#jquery').html('hi jQuery~');
-			err();
+//			err();
 //			aa('helo');
-			console.log(parseInt(a));
+//			console.log(parseInt(a));
+
+			var tmp=[4];
+			var num1=25,num2=3;
+			tmp[0]=3;
+			var t=[false,false,true,false],
+					t2=[false,true,false,false],
+					ret=false;
+			console.warn("============example==========");
+			console.debug("num1=%d, num1.toString(2) = %d",num1,num1.toString(2));
+			console.debug("num2= %d, num2.toString(2) = %d",num2,num2.toString(2));
+//			console.debug(25 | 3);
+			var result1 = 25 & 3;
+			var result2 = 25 | 3;
+			var result3 = 25 ^ 3;
+			console.debug("var result1 = 25 & 3 = %d; %d",result1,result1.toString(2));
+			console.debug("var result2 = 25 | 3 = %d; %d",result2,result2.toString(2));
+			console.debug("var result3 = 25 ^ 3 = %d; %d",result3,result3.toString(2));
+//			console.log("t = %o",t);
+//			console.log(t2);
+//			console.log("(t[0]&t[1]&t[2]&t[3]) = %d",(t[0]&t[1]&t[2]&t[3]));
+//			console.log((t2[0]|t2[1]|t2[2]|t2[3]));
+//			console.log((t[0]|t[1]|t[2]|t[3])|(t2[0]|t2[1]|t2[2]|t2[3]));
+			console.warn("============example==========");
 		}
 
 	</script>
